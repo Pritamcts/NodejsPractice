@@ -1,0 +1,11 @@
+{
+  "name": "js-tutorial",
+  "version": "1.0.0",
+  "main": "async-await.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pritam",
+  "license": "ISC",
+  "description": ""
+}
