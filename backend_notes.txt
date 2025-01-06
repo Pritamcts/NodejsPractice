@@ -1,0 +1,23 @@
+Express js is npm package that is used to create server side application. It is a framework of Node js
+
+
+Routing in Express js 
+Routing is a mechanism that determines how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on).
+
+Middleware in Express js
+Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.
+
+We can set a middleware using use method of express object.
+
+app.use((req, res, next) => {
+  console.log('Time:', Date.now());
+  next();
+});
+
+
+Error handling in Express js:
+This is the default error handeler in express js
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
